@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <TargetFrameworks>netstandard2.0</TargetFrameworks>
+
+      <PackageTags>NuGet;Scaleway;Cloud</PackageTags>
+      <Description>The libraries to host BaGet on Scaleway.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BaGet.Core\BaGet.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aws4RequestSigner" Version="1.0.1" />
+    </ItemGroup>
+
+</Project>

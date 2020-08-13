@@ -1,6 +1,7 @@
 using System;
 using BaGet.Core;
 using BaGet.Hosting;
+using BaGet.Scaleway;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
@@ -76,6 +77,7 @@ namespace BaGet
             app.AddAwsS3Storage();
             app.AddAzureBlobStorage();
             app.AddGoogleCloudStorage();
+            app.AddScalewayObjectStorage();
 
             // Add search providers.
             app.AddAzureSearch();
